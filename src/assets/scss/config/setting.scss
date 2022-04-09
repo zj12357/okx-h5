@@ -1,0 +1,29 @@
+@mixin bgurl($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin positionAbs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin textEllipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+//主题色
+$theme-color: linear-gradient(180deg, #ff8d86 0%, #f8413d 100%);
+
+//阴影盒子
+$common-shadow: 3px 0 17px 0 rgba(133, 133, 133, 0.18);
+
+//主题单色
+$primary-color: #f8413d;

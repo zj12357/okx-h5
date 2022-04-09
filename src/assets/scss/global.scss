@@ -1,0 +1,33 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+#app {
+	width: 100%;
+	height: 100%;
+}
+//主题色
+:root {
+	--van-blue: #000 !important;
+}
+// @media (min-width: 768px) {
+// 	#app {
+// 		width: 750px;
+// 		height: 100%;
+// 		margin:  0 auto;
+// 	}
+// }
+.van-nav-bar__text,
+.van-icon {
+	color: #909090 !important;
+}
+
+.duqGkC {
+	bottom: 80px !important;
+	left: auto !important;
+	top: auto !important;
+	right: 10px !important;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content=" width=device-width, initial-scale=1.0,shrink-to-fit=no maximum-scale=1.0, minimum-scale=1.0,user-scalable=no, viewport-fit=cover"
+		/>
+		<link rel="icon" href="<%= BASE_URL %>favicon.png" />
+		<title><%= htmlWebpackPlugin.options.title %></title>
+	</head>
+	<body>
+		<noscript>
+			<strong
+				>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't
+				work properly without JavaScript enabled. Please enable it to
+				continue.</strong
+			>
+		</noscript>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+	</body>
+	<script type="text/javascript">
+		(function (m, ei, q, i, a, j, s) {
+			m[i] =
+				m[i] ||
+				function () {
+					(m[i].a = m[i].a || []).push(arguments);
+				};
+			(j = ei.createElement(q)), (s = ei.getElementsByTagName(q)[0]);
+			j.async = true;
+			j.charset = 'UTF-8';
+			j.src = 'https://static.meiqia.com/dist/meiqia.js';
+			s.parentNode.insertBefore(j, s);
+		})(window, document, 'script', '_MEIQIA');
+		_MEIQIA('entId', 'eb7a4d9e5d0d312c67b2b36b0ca4586e');
+		function initFunction(servability) {
+			// 你可以根据自己的需求编写相应的代码
+			console.log('美洽网站插件初始化完毕。');
+			if (servability) {
+				console.log('有客服在线');
+			} else {
+				console.log('无客服在线');
+			}
+		}
+		_MEIQIA('allSet', initFunction);
+	</script>
+</html>

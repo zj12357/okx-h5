@@ -1,0 +1,42 @@
+{
+  "name": "vue3-activity-cli",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "autoprefixer": "^9",
+    "axios": "^0.24.0",
+    "babel-plugin-import": "^1.13.3",
+    "copy-to-clipboard": "^3.3.1",
+    "core-js": "^3.6.5",
+    "echarts": "^5.3.1",
+    "klinecharts": "^8.3.6",
+    "licia": "^1.32.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "postcss": "^7",
+    "vant": "3",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2"
+  }
+}
