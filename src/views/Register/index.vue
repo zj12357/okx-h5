@@ -10,7 +10,7 @@
 		<van-form @submit="onSubmit">
 			<van-cell-group inset>
 				<van-field
-					v-model="username"
+					v-model="name"
 					name="用户名"
 					label="用户名"
 					placeholder="请填写用户名"
@@ -28,6 +28,19 @@
 					name="密码"
 					label="密码"
 					placeholder="请填写密码"
+					:rules="[
+						{
+							required: true,
+							message: '长度为6-12位数字或字母组成',
+						},
+					]"
+				/>
+				<van-field
+					v-model="comfirmPassword"
+					type="password"
+					name="comfirmPassword"
+					label="确认密码"
+					placeholder="请填写确认密码"
 					:rules="[
 						{
 							required: true,
@@ -72,8 +85,9 @@ import { reactive, toRefs } from 'vue';
 export default {
 	setup() {
 		const ruleForm = reactive({
-			username: '',
+			name: '',
 			password: '',
+			comfirmPassword:'',
 			invitationCode: '',
 		});
 		const onSubmit = (value) => {

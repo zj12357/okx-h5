@@ -5,9 +5,9 @@
 				<van-field
 					v-model="username"
 					name="username"
-					label="姓名"
-					placeholder="请输入姓名"
-					:rules="[{ required: true, message: '请输入姓名' }]"
+					label="真实姓名"
+					placeholder="请输入真实姓名"
+					:rules="[{ required: true, message: '请输入真实姓名' }]"
 				/>
 				<van-field
 					v-model="bankNumber"

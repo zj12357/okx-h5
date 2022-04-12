@@ -16,13 +16,6 @@
 					placeholder="请输入金额"
 					:rules="[{ required: true, message: '请输入金额' }]"
 				/>
-				<van-field
-					v-model="password"
-					name="password"
-					label="提现密码"
-					placeholder="请输入提现密码"
-					:rules="[{ required: true, message: '请输入提现密码' }]"
-				/>
 			</van-cell-group>
 			<div class="recharge-btn">
 				<van-button round block type="primary" native-type="submit" color="#000">
@@ -48,7 +41,6 @@ export default {
 	setup() {
 		const data = reactive({
 			amount: '',
-			password: '',
 		});
 		const isRecharge = ref(false);
 		const onSubmit = (values) => {
